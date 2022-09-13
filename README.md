@@ -1,6 +1,6 @@
 # SQL
 
-Bu repoda [Patika.dev]( www.patika.dev) kapsamındaki SQL ödevlerimi bulunduruyorum.
+Bu repoda [Patika.dev]( www.patika.dev) SQL eğitimi kapsamındaki ödevlerimi bulunduruyorum.
 
 [Patika.dev profilim](https://app.patika.dev/adamblue)
 
