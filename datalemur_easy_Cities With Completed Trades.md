@@ -21,7 +21,7 @@ timestamp|	datetime
 >***trades*** Example Input:
 
 order_id|	user_id|	price|	quantity|	status| timestamp
----:|---:|---:|---:|
+---:|---:|---:|---:|---:|---:|
 100101|	111|	9.80|	10|	Cancelled|	08/17/2022 12:00:00
 100102|	111|	10.00|	10|	Completed|	08/17/2022 12:00:00
 100259|	148|	5.10|	35|	Completed|	08/25/2022 12:00:00
@@ -69,7 +69,10 @@ Denver|	1
     GROUP BY users.city
     ORDER BY total_orders DESC
     LIMIT 3;
+    
+### **Explanation**
 
+In this example, San Francisco has first place with 3 orders, Boston has second place with 2 orders, and Denver has third place with 1 order.
 
 Question reference: [datalemur](https://datalemur.com/).
                     Made by Nick Singh, Best-Selling Author of [Ace the Data Science Interview](https://www.amazon.com/dp/0578973839?&linkCode=sl1&tag=datalemur-20&linkId=be42c7443fa05a3c9d783fee4e6f4762&language=en_US&ref_=as_li_ss_tl)
