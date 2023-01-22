@@ -51,7 +51,7 @@ The page with ID 20701 has no likes.
     FROM pages
     WHERE page_id NOT IN (SELECT DISTINCT(page_id) 
                           FROM page_likes)
-    ORDER BY page_id
+    ORDER BY page_id;
 
 
 
