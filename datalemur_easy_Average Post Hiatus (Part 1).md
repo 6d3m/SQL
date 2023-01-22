@@ -40,7 +40,7 @@ user_id|	days_between
     WHERE EXTRACT(YEAR FROM post_date:: TIMESTAMP) = 2021
     GROUP BY user_id
     HAVING COUNT(*) > 1
-    ORDER BY days_between DESC
+    ORDER BY days_between DESC;
 
 
 Question reference: [datalemur](https://datalemur.com/).
