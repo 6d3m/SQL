@@ -48,5 +48,6 @@ Given the example input, there are 2 laptop views and 3 mobile views.
             FROM viewership 
             WHERE device_type IN ('tablet','phone')) AS mobile_views;
 
-
+Question reference: [datalemur](https://datalemur.com/).
+                    Made by Nick Singh, Best-Selling Author of [Ace the Data Science Interview](https://www.amazon.com/dp/0578973839?&linkCode=sl1&tag=datalemur-20&linkId=be42c7443fa05a3c9d783fee4e6f4762&language=en_US&ref_=as_li_ss_tl)
 
