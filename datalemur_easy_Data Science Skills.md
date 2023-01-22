@@ -46,7 +46,7 @@ Candidate 123 is displayed because they have Python, Tableau, and PostgreSQL ski
     WHERE skill IN ('Python', 'Tableau', 'PostgreSQL')
     GROUP BY candidate_id
     HAVING COUNT(skill) = 3
-    ORDER BY candidate_id
+    ORDER BY candidate_id;
 
 
 
