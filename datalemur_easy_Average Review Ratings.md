@@ -37,9 +37,9 @@ mth|	product|	avg_stars
 ## Solution
 ---
     SELECT 
-    DATE_PART('month', submit_date) AS mth, 
-    product_id AS product, 
-    ROUND(AVG(stars),2) AS av_stars 
+        DATE_PART('month', submit_date) AS mth, 
+        product_id AS product, 
+        ROUND(AVG(stars),2) AS av_stars 
     FROM reviews
     GROUP BY mth, product
     ORDER BY mth, product;
