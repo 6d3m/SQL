@@ -41,7 +41,8 @@ Candidate 123 is displayed because they have Python, Tableau, and PostgreSQL ski
 
 ## Solution
 ---
-    SELECT candidate_id 
+    SELECT 
+        candidate_id 
     FROM candidates 
     WHERE skill IN ('Python', 'Tableau', 'PostgreSQL')
     GROUP BY candidate_id
