@@ -39,11 +39,11 @@ sender_id|	message_count
 ## Solution
 ---
     SELECT 
-    sender_id, 
-    COUNT(*) as message_count 
+        sender_id, 
+        COUNT(*) AS message_count 
     FROM messages
     WHERE DATE_PART('year', sent_date::DATE) = 2022 
-    AND DATE_PART('month', sent_date::DATE) = 08
+        AND DATE_PART('month', sent_date::DATE) = 08
     GROUP BY sender_id
     ORDER BY message_count DESC
     LIMIT 2;
