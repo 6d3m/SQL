@@ -60,11 +60,11 @@ Denver|	1
 ## Solution
 ---
     SELECT 
-    users.city, 
-    COUNT(*) as total_orders 
+        users.city, 
+        COUNT(*) as total_orders 
     FROM trades
     JOIN users 
-    ON users.user_id = trades.user_id
+        ON users.user_id = trades.user_id
     WHERE trades.status = 'Completed'
     GROUP BY users.city
     ORDER BY total_orders DESC
