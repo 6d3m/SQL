@@ -36,7 +36,8 @@ The only item in the output is "bumper" because step 3 didn't have a finish date
 
 ## Solution
 ---
-    SELECT DISTINCT part 
+    SELECT 
+        DISTINCT part 
     FROM parts_assembly
     WHERE finish_date IS NULL;
 
