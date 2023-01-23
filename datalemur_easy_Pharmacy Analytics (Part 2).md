@@ -1,4 +1,4 @@
-# Pharmacy Analytics (Part 2    )
+# Pharmacy Analytics (Part 2)
 ## **Question**
 
 CVS Health is trying to better understand its pharmacy sales, and how well different products are selling. Each drug can only be produced by one manufacturer.
