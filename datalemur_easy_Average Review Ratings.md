@@ -36,9 +36,11 @@ mth|	product|	avg_stars
 
 ## Solution
 ---
-    SELECT 
+    SELECT
+        -- Extract the month from the submit_date column
         DATE_PART('month', submit_date) AS mth, 
         product_id AS product, 
+        --Calculate average stars and round it to 2 decimals
         ROUND(AVG(stars),2) AS av_stars 
     FROM reviews
     GROUP BY mth, product
