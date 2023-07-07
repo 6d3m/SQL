@@ -46,7 +46,6 @@ app_id|	ctr
 
     
     FROM events
-    -- Filter the events for the year 2022
     WHERE DATE_PART('year',TIMESTAMP) = 2022
     GROUP BY app_id;
 
