@@ -34,11 +34,14 @@ user_id|	days_between
 ## Solution
 ---
     SELECT 
-        user_id, 
+        user_id,
+        -- Calculate the number of days between last post date and first post date
         EXTRACT(DAY FROM MAX(post_date)-MIN(post_date)::TIMESTAMP) AS days_between 
     FROM posts
+    -- Filter the post dates for the year 2021
     WHERE EXTRACT(YEAR FROM post_date:: TIMESTAMP) = 2021
     GROUP BY user_id
+    -- Filter the users posted at least twice
     HAVING COUNT(*) > 1
     ORDER BY days_between DESC;
 
